@@ -1,0 +1,187 @@
+@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
+
+.app-container {
+  font-family: 'PP Neue Montreal', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  margin-top: 60px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 30px;
+  height: 500px;
+  background-color: transparent;
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.motivational-text {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+  line-height: 1.4em;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.green-button {
+  background-color: #32cd32;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+
+.green-button .icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.green-button:hover {
+  background-color: #2db82d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.green-button:hover .icon {
+  transform: translateX(5px);
+}
+
+.lead-list-section {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: transparent;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.lead-filters-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.business-opportunity-text {
+  font-size: 1.2rem;
+  color: #273a3e;
+  line-height: 1.2em;
+  margin-top: 10px;
+  max-width: 600px;
+  text-align: left;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .lead-list-section {
+    padding: 20px 10px;
+  }
+
+  .filters-container {
+    padding: 10px;
+  }
+
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-group-item p {
+    margin: 5px 0;
+  }
+
+  .motivational-text {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .left-content {
+    padding-right: 0;
+  }
+
+  .right-image {
+    width: 390px;
+    margin-top: 20px;
+  }
+  
+  .green-button {
+    margin-top: 10px;
+    margin: 25px 43px 45px;
+  }
+
+  .business-opportunity-text {
+    font-size: 1.2rem;
+    color: #273a3e;
+    line-height: 1.2em;
+    margin-top: 10px;
+    max-width: 600px;
+    text-align: left;
+    font-weight: 300;
+    padding: 0 20px 3px;
+  }
+}

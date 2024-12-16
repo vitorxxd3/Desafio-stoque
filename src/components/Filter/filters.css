@@ -1,0 +1,61 @@
+
+.filters-container {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.filters-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.filters-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.filters-container button:hover {
+  background-color: #32cd32;
+}
+.input-group :hover{
+border-color: #32cd32;
+}
+
+.filter-button:hover {
+  background: linear-gradient(90deg, #28a745, #218838);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .filters-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+  }
+
+  .filter-button {
+    font-size: 1rem;
+  }
+}
